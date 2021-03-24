@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<project name="Calculator" default="AllBuild">
+
+    <target name="AllBuild" depends="jarFile">
+    </target>
+
+    <target name="jarFile" depends="compile">
+        <jar destfile="../jar/java-ci-pipeline.jar" includes="../src/**/*.class"/>
+    </target>
+    <target name="compile">
+        <javac srcdir="." destdir="../src"/>
+    </target>
+
+
+
+
+</project>
