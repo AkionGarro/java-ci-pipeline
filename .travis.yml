@@ -1,4 +1,11 @@
 dist: xenial
 language: java
 install: ant deps
-
+ddons:
+  sonarcloud:
+    organization: "garroakion" # the key of the org you chose at step #3
+    token:
+      secure: "a9ce230cc8d7f88e05972bc4050da59da621c4ca" # encrypted value of your token
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
