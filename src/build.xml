@@ -4,12 +4,10 @@
     <target name="AllBuild" depends="jarFile">
     </target>
 
-    <target name="jarFile" depends="compile">
+    <target name="jarFile">
         <jar destfile="../jar/java-ci-pipeline.jar" includes="../src/**/*.class"/>
     </target>
-    <target name="compile">
-        <javac srcdir="." destdir="../src"/>
-    </target>
+
 
 
 
