@@ -3,13 +3,7 @@
 
     <target name="AllBuild" depends="jarFile">
     </target>
-
-    <target name="jarFile">
+    <target name="jarFile" >
         <jar destfile="../jar/java-ci-pipeline.jar" includes="../src/**/*.class"/>
     </target>
-
-
-
-
-
 </project>
